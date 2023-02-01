@@ -1,0 +1,516 @@
+/*FONTS*/
+/*MONTESERRAT*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&display=swap');
+/*Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&family=Quicksand:wght@300&display=swap');
+/*Rajdhani*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*XBOX LOGO*/
+@font-face {
+    font-family: 'X360';
+    src: url('../font/X360_xbox-font.ttf');
+}
+
+/*PLAYSTATION LOGO*/
+@font-face {
+    font-family: 'Zrnic';
+    src: url('../font/zrnic_playstation-font.ttf');
+}
+
+/*NINTENDO LOGO*/
+@font-face {
+    font-family: 'Pretendo';
+    src: url('../font/Pretendo_nintendo-font.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 2100px;
+    margin: 0 auto;
+}
+
+/*  HEADER  */
+
+.header{
+    text-align: center;
+}
+
+.header nav ul li {
+    margin: 5px 0;
+    display: inline-block;
+    list-style-type: none;
+    width: 150px;
+    border:3px solid white;
+    border-radius: 4px;
+}
+
+.nav{
+    display: inline-block;
+}
+
+#logo,#usuario{
+    margin: 20px 15px;
+}
+
+#logo{
+    float: left;
+}
+
+#usuario{
+    float: right;
+    border-radius: 20px;
+}
+
+#usuario:hover{
+    box-shadow: 1px -2px 29px -6px rgba(0,0,0,0.54);
+}
+
+#logo-xbox:hover{
+    border-bottom: 3px solid rgb(16, 124, 16);
+}
+
+#logo-playstation:hover{
+    border-bottom: 3px solid rgb(0, 67, 156);
+}
+
+#logo-nintendo:hover{
+    border-bottom: 3px solid rgb(230, 0, 18);
+}
+
+/*  CONTENIDO   */
+.xbox{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(31,30,35,1),rgba(31,30,35,1), rgba(32,31,36,1), rgba(32,31,36,1));
+    background-size: 4px 4px;
+    color: white;
+    display: inline-flex;
+}
+
+.xbox-text{
+    height: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: 147px 0;
+    width: fit-content;
+}
+
+.xbox-text h1{
+    font-family: 'X360';
+    font-size: 8rem;
+}
+
+.xbox-text h1:hover{
+    background: linear-gradient(to right, #77bb44, #2ca243, #107c10);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.xbox-text h3{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.xbox-text h5{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#xbox-bg{
+    float: left;
+}
+
+.xbox-text a{
+    font-weight: 100;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px;   
+}
+
+.xbox-text i{
+    vertical-align: sub;
+}
+
+.xbox-text a:hover{
+    color: rgb(20, 158, 20);
+    border-color: rgb(20, 158, 20);
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.79);
+}
+
+/*LINKS*/
+a:link,a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+/*PLAYSTATION*/
+.playstation{
+    margin-top: -3px;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to bottom, #001947, #00266b, #003087, #0040b8, #014fe0);
+}
+
+#playstation-bg{
+    float: right;
+    margin: 0 20px;
+}
+
+.playstation-text{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 157px;
+    margin: 0 70px;
+}
+
+.playstation-text h1{
+    color: white;
+    font-family: 'Zrnic';
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
+}
+
+.playstation-text h1:hover{
+    background-image: linear-gradient(to right, #DF0024, #F3C300, #00AC9F, #2E6DB4);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.playstation-text h3{
+    font-family: 'Quicksand';
+    font-size: 1.3rem;
+    color: rgb(238, 238, 238);
+    letter-spacing: 0.1rem;
+    margin: 20px 0;
+}
+
+.playstation-text a{
+    font-weight: 100;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.playstation-text i{
+    vertical-align: sub;
+}
+
+
+.playstation-text a:hover{
+    box-shadow: 0px 0px 42px 2px rgba(0,0,0,0.79);
+    background-color: #01328d;
+}
+
+/*NINTENDO*/
+.nintendo{
+    margin: 2px 0;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to bottom, #80000b, #b40110, #bb0010, #b8000f, #E60012, #9c000d);
+    text-align: center;
+}
+
+#nintendo-bg{
+    margin-top: 70px;
+    margin-left: 105px;
+    float: left;
+}
+
+.nintendo-text{
+    float: right;
+    color: white;
+    margin-top: 160px;
+    margin-right: 230px;
+    text-align: center;
+}
+
+.nintendo-text h1{
+    font-family: 'Pretendo';
+    font-size: 5.8rem;
+    letter-spacing: 8px;
+    padding: 5px;
+}
+
+.nintendo-text h1:hover{
+    background-image: url('../img/nintendo-hover.png');
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+}
+
+.nintendo-text span{
+    letter-spacing: 10px;
+}
+
+.nintendo-text h4{
+    padding: 20px;
+    font-family: 'Rajdhani';
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.nintendo-text a{
+    font-weight: 100;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.nintendo-text i{
+    vertical-align: sub;
+}
+
+.nintendo-text a:hover{
+    box-shadow: 0px 0px 42px 2px rgba(0,0,0,0.79);
+    background-color: #a3010f;
+}
+
+/*FOOTER*/
+footer{
+    font-family: 'Poppins';
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(rgb(37, 37, 37), rgb(34, 34, 34));
+    display: flex;
+}
+
+.abt-us, .siguenos{
+    padding: 70px 110px;
+}
+
+.abt-us h3, .siguenos h3{
+    letter-spacing: 2px;
+    color: rgb(250, 206, 30);
+}
+
+.abt-us ul{
+    list-style-type: disc;
+    line-height: 40px;
+    color: rgb(160, 154, 154);
+    padding: 0 20px;
+}
+
+.abt-us ul li{
+    width: 200px;
+}
+
+.abt-us ul li a:link, .abt-us ul li a:visited{
+    color: rgb(160, 154, 154);
+    text-decoration: none;
+}
+
+.abt-us ul li a:hover, .abt-us ul li:hover{
+    color: rgb(250, 206, 30);
+    text-decoration: underline;
+}
+
+.contacto{
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.contacto h2{
+    letter-spacing: 2px;
+    color: rgb(250, 206, 30);
+}
+
+.contacto form input[type="text"], .contacto form input[type=email]{
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    color: rgb(160, 154, 154);
+    background-color: rgb(53, 53, 53);
+}
+
+.contacto form input:focus, .contacto form textarea:focus{
+    outline: none;
+    border-color: rgb(250, 206, 30);
+}
+
+.contacto form input::placeholder, .contacto form textarea::placeholder{
+    color: rgb(160, 154, 154);
+}
+
+.contacto form input[type="text"]{
+    min-width: 200px;
+}
+
+.contacto form input[type=email]{
+    margin-top: 10px;
+    width: 405px;
+}
+
+.contacto form textarea{
+    padding: 5px;
+    border: 2px solidrgb(53, 53, 53);
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(160, 154, 154);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacto form input[type="submit"], .contacto form input[type="reset"]{
+    width: 193px;
+    height: 40px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto form input[type="submit"]{
+    background-color: rgb(250, 206, 30);
+    color: rgb(34, 34, 34);
+}
+
+.contacto form input[type="reset"]{
+    background-color: rgb(53, 53, 53);
+    color: rgb(160, 154, 154);
+}
+
+.siguenos{
+    text-align: center;
+}
+
+.siguenos ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 25px;
+    margin: 15px 0;
+}
+
+.siguenos li a svg:hover{
+    transition: 0.5s;
+    stroke: rgb(250, 206, 30);
+}
+
+.siguenos h4{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: rgb(250, 206, 30);
+    letter-spacing: 2px;
+}
+
+.siguenos h5{
+    letter-spacing: -2px;
+    font-size: larger;
+    color: rgb(160, 154, 154);
+    cursor: pointer;
+    margin-bottom: 10px;
+    min-width: 230px;
+}
+
+.siguenos h5 span:hover{
+    color: rgb(250, 206, 30);
+}
+
+#github:hover{
+    transition: 0.5s;
+    stroke: rgb(250, 206, 30);
+}
+
+/*MEDIA QUERIES*/
+/*ROTURA 1 PLAY + NINTENDO*/
+@media (max-width: 1473px) {
+    .nintendo-text{
+        margin-right: 100px;
+    }
+    
+    .playstation-text{
+        padding: 157px 50px;
+    }
+
+    #nintendo-bg{
+        width: 370px;
+        margin-left: 70px;
+        margin-top: 100px;
+    }
+    
+    #playstation-bg{
+        height: 70%;
+        margin: 50px 20px;
+    }
+}
+
+/*ROTURA 2 PLAY + NINTENDO*/
+@media (max-width: 1245px) {
+    .playstation-text{
+        padding: 157px 0px;
+        margin: 0 20px;
+    }
+
+    .nintendo-text{
+        margin-right: 20px;
+    }
+}
+
+/*ROTURA FOOTER*/
+@media (max-width: 1210px) {
+    footer{
+        flex-direction: column;
+        height: fit-content;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .abt-us{
+        width: fit-content;
+    }
+
+    .abt-us ul{
+        width: fit-content;
+    }
+
+    .abt-us ul li{
+        width: fit-content;
+    }
+}
+
+/*SIN IMAGENES*/
+@media (max-width: 1145px) {
+    #nintendo-bg,#playstation-bg,#xbox-bg{
+        display: none;
+    }
+
+    .xbox{
+        margin-bottom: 4px;
+    }
+
+    .nintendo,.playstation,.xbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nintendo-text{
+        padding: 0;
+        margin: 0;
+        float: none;
+    }
+}
