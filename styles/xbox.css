@@ -1,4 +1,9 @@
-/*
+/*ICONS*/
+/*GOOGLE ICONS*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0");
+
+/*FONTS*/
+/*XBOX FONT*/
 @font-face {
     font-family: 'X360';
     src: url('../font/X360_xbox-font.ttf');
@@ -15,32 +20,64 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-
-.wrap header{
-    background: #474747;
+/*HEADER*/
+header{
+    background: #202325;
     height: 70px;
+    font-family: 'X360';
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
-    
+
+header figure{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 50px;
+}
+
+header figure a{
+    position: relative;
+    right: 90px;
+    padding: 13px 15px;
+    border-radius: 100px;
+}
+
+header figure a:hover{
+    transition: 0.5s;
+    color: #16a516;
+    background-color: rgb(51, 51, 51);
+}
+
 #header-xbox_icon{
-    margin: 10px 70px;
-    float: left;
-    border-right: 2px solid grey;
-    padding-right: 90px;
+    margin: 10px 20px;
+    padding-right: 70px;
+    border-right: 3px solid grey;
+    border-radius: 1px;
 }
 
-.wrap header nav{
-    text-align: center;
-    margin: 0 auto;
-    width: fit-content;
+header a#menu{
+    padding: 10px;
+    border-bottom: 2px solid #202325;
+    border-radius: 15px;
 }
 
-.wrap header nav ul{
-    display: inline-flex;
-    list-style: none;
-    border: 1px solid white;
-    gap: 90px;
+header a#menu:hover{
+    background: linear-gradient(to right, #77bb44, #2ca243, #107c10);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.wrap header nav li{
-    border: 1px solid orange;
+header a:link,a:visited{
+    color: white;
+    text-decoration: none;
 }
