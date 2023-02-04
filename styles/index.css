@@ -88,7 +88,7 @@ html{
     border-bottom: 3px solid rgb(230, 0, 18);
 }*/
 
-/*  CONTENIDO   */
+/*  MAIN   */
 .xbox{
     width: 100%;
     height: 600px;
@@ -344,6 +344,10 @@ footer{
     padding: 5px;
     color: rgb(160, 154, 154);
     background-color: rgb(53, 53, 53);
+}
+
+.contacto form textarea{
+    resize: none;
 }
 
 .contacto form input:focus, .contacto form textarea:focus{
