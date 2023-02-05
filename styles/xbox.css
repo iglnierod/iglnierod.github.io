@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0");
 
 /*FONTS*/
+/*URBANIST*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 /*XBOX FONT*/
 @font-face {
     font-family: 'X360';
@@ -16,9 +18,10 @@
 }
 
 body{
-    background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    max-width: 2560px;
+    margin: 0 auto;
 }
 /*HEADER*/
 header{
@@ -52,7 +55,7 @@ header figure a{
 header figure a:hover{
     transition: 0.5s;
     color: #16a516;
-    background-color: rgb(51, 51, 51);
+    background-color: #333333;
 }
 
 #header-xbox_icon{
@@ -64,7 +67,6 @@ header figure a:hover{
 
 header a#menu{
     padding: 10px;
-    border-bottom: 2px solid #202325;
     border-radius: 15px;
 }
 
@@ -80,4 +82,56 @@ header a#menu:hover{
 header a:link,a:visited{
     color: white;
     text-decoration: none;
+}
+
+/*MAIN*/
+.introduccion{
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 1fr;
+}
+
+.introduccion aside{
+    background-color: rgb(255, 36, 255);
+    width: 100%;
+    height: 600px;
+}
+
+.introduccion aside.hades{
+    background-image: url(../img/xbox-introduccion-hades.jpg);
+}
+
+.introduccion aside.halo{
+    background-image: url(../img/xbox-introduccion-halo.jpg_large);
+}
+
+.introduccion article{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient();
+}
+
+.bg-center-cover{
+    background-position: center;
+    background-size: cover;
+}
+
+.introduccion article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduccion article{
+    padding: 20px 120px;
+    background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(65, 65, 65) 25%, rgb(77, 77, 77) 50%, rgb(73, 73, 73) 75%, rgb(109, 109, 109) 100%);
+}
+
+.introduccion article p{
+    font-family: 'Urbanist';
+    font-size: 28px;
+    line-height: 1.5em;
+    height: 350px;
+    padding: 20px 70px;
+    text-align: center;
 }
