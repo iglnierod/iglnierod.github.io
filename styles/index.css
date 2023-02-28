@@ -40,54 +40,6 @@ html{
     margin: 0 auto;
 }
 
-/*  HEADER  */
-/*
-.header{
-    text-align: center;
-}
-
-.header nav ul li {
-    margin: 5px 0;
-    display: inline-block;
-    list-style-type: none;
-    width: 150px;
-    border:3px solid white;
-    border-radius: 4px;
-}
-
-.nav{
-    display: inline-block;
-}
-
-#logo,#usuario{
-    margin: 20px 15px;
-}
-
-#logo{
-    float: left;
-}
-
-#usuario{
-    float: right;
-    border-radius: 20px;
-}
-
-#usuario:hover{
-    box-shadow: 1px -2px 29px -6px rgba(0,0,0,0.54);
-}
-
-#logo-xbox:hover{
-    border-bottom: 3px solid rgb(16, 124, 16);
-}
-
-#logo-playstation:hover{
-    border-bottom: 3px solid rgb(0, 67, 156);
-}
-
-#logo-nintendo:hover{
-    border-bottom: 3px solid rgb(230, 0, 18);
-}*/
-
 /*  MAIN   */
 .xbox{
     width: 100%;
