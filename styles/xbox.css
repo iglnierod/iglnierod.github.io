@@ -89,12 +89,12 @@ header a:link,a:visited{
     display: grid; 
     grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 1fr;
+    min-height: 600px;
 }
 
 .introduccion aside{
     background-color: rgb(255, 36, 255);
     width: 100%;
-    height: 600px;
 }
 
 .introduccion aside.hades{
@@ -107,7 +107,6 @@ header a:link,a:visited{
 
 .introduccion article{
     width: 100%;
-    height: 600px;
     background-image: linear-gradient();
 }
 
@@ -120,18 +119,33 @@ header a:link,a:visited{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 
 .introduccion article{
-    padding: 20px 120px;
+    padding: 20px 60px;
     background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(65, 65, 65) 25%, rgb(77, 77, 77) 50%, rgb(73, 73, 73) 75%, rgb(109, 109, 109) 100%);
 }
 
 .introduccion article p{
     font-family: 'Urbanist';
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5em;
     height: 350px;
-    padding: 20px 70px;
+    padding: 20px 20px;
     text-align: center;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1500px){
+    /*Espaciado entre la flecha(atrás) y logo XBOX*/
+    header figure a{
+        right: 40px;
+    }
+}
+
+@media (max-width: 1036px){
+    .introduccion article p{
+        padding: 20px 0px;
+    }
 }
