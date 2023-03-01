@@ -216,5 +216,6 @@ header a:link,a:visited{
 
     .introduccion article p{
         font-size: 26px;
+        height: fit-content;
     }
 }
