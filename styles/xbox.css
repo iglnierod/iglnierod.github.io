@@ -18,7 +18,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
     max-width: 2560px;
     margin: 0 auto;
 }
@@ -88,6 +88,7 @@ header a:link,a:visited{
 }
 
 /*MAIN*/
+/* ========= INTRODUCCION ========= */
 .introduccion{
     display: grid; 
     grid-template-columns: 1fr 2fr 1fr; 
@@ -109,6 +110,7 @@ header a:link,a:visited{
 }
 
 .introduccion article{
+    color: white;
     width: 100%;
     background-image: linear-gradient();
 }
@@ -138,6 +140,73 @@ header a:link,a:visited{
     height: 350px;
     text-align: justify;
 }
+
+/* ========= HISTORIA ========= */
+.historia{
+    padding: 10px;
+    color: black;
+    text-align: justify;
+    font-family: 'Urbanist';
+    font-size: 24px;
+    background-color: rgb(255, 255, 254);
+}
+
+.historia .texto{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.historia .texto h3{
+    text-align: center;
+    font-size: 60px;
+}
+
+.historia .texto h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.historia .texto p{
+    padding: 20px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+/* ========= CONSOLAS ========= */
+.consolas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.consolas table{
+    font-family: 'Urbanist';
+    border: 2px solid grey;
+}
+
+.consolas th{
+    font-size: xx-large;
+}
+
+.consolas td{
+    border-top: 1px solid grey;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.imagen a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.consolas td#info{
+    font-weight: bold;
+}
+
 
 /*MEDIA QUERIES*/
 @media (max-width: 1500px){
@@ -217,5 +286,15 @@ header a:link,a:visited{
     .introduccion article p{
         font-size: 26px;
         height: fit-content;
+    }
+
+    /* TABLAS CONSOLAS*/
+    .consolas{
+        flex-direction: column;
+    }
+
+    .consolas table{
+        margin: 0 auto;
+        width: 500px;
     }
 }
