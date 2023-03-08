@@ -4,6 +4,9 @@
 /*FONTS*/
 /*URBANIST*/
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+/*ROBOTO*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*XBOX FONT*/
 @font-face {
     font-family: 'X360';
@@ -207,12 +210,189 @@ header a:link,a:visited{
     font-weight: bold;
 }
 
+/* ========= TIENDA ========= */
+.tienda{
+    margin-top: 20px;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+.tienda h2{
+    font-family: 'X360';
+    font-size: 70px;
+    animation: cambia-color 2s infinite;
+}
+
+@keyframes cambia-color {
+    0% {
+      color: #107C10; /* Verde oscuro */
+      border-color: rgb(16, 124, 16);
+    }
+    50% {
+        color: #7AB800; /* Verde medio */
+        border-color: #7AB800;
+    }
+    100% {
+        color: #107C10; /* Verde oscuro */
+        border-color: #107C10;
+    }
+}
+
+.tienda hr{
+    margin: 0 150px;
+    position: relative;
+    border-top: 3px solid;
+    animation: cambia-color 2s infinite;
+}
+
+.tienda .grid{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px 100px;
+}
+
+.tienda .grid .box{
+    background-color: white;
+    width: 290px;
+    height: 420px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    font-family: 'Roboto';
+}
+
+.tienda .grid .box:hover{
+    transition: 0.7s ease;
+    box-shadow: -20px 21px 0px -3px rgba(16,124,16,1);
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+.tienda .grid .box h4{
+    font-size: 25px;
+    color: rgb(43, 43, 43);
+}
+
+.box .imagen{
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.tienda .grid .box .info{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tienda .grid .box .info .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tienda .grid .box .info .rating span{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(101, 101, 101);
+}
+
+.tienda .grid .box .info span{
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(57, 57, 57);
+}
+
+.minecraft .imagen{
+    background: url(https://i.pinimg.com/originals/1b/9f/77/1b9f772d10ae2cfce18fab1b05705810.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hades .imagen{
+    background: url(https://cdn1.epicgames.com/min/offer/1200x1600-1200x1600-e92fa6b99bb20c9edee19c361b8853b9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.doom .imagen{
+    background: url(https://media.vandal.net/i/840x630/6-2019/201961213194638_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.forza .imagen{
+    background: url(https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tienda a{
+    display: flex;
+    justify-content: center;
+}
+
+.tienda a:link,a:visited{
+    text-decoration: none;
+}
+
+.tienda a button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tienda a button{
+    padding: 10px 35px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #107c10;
+    color: white;
+    height: 50px;
+}
+
+.tienda a button:hover > span{
+    animation: mover-flecha 0.7s ease infinite;
+}
+
+@keyframes mover-flecha{
+    from{
+        position: inherit;
+    }
+    to{
+        position: relative;
+        left: 13px;
+    }
+}
 
 /*MEDIA QUERIES*/
 @media (max-width: 1500px){
     /*Espaciado entre la flecha(atrás) y logo XBOX*/
     header figure a{
         right: 40px;
+    }
+
+    .tienda .grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 20px;
     }
 }
 
