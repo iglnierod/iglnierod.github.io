@@ -272,6 +272,7 @@ header a:link,a:visited{
     border-radius: 15px;
     border: 2px solid grey;
     font-family: 'Roboto';
+    transition: 0.7s linear;
 }
 
 .tienda .grid .box:hover{
