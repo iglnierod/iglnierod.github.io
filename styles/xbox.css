@@ -6,7 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 /*ROBOTO*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 /*XBOX FONT*/
 @font-face {
     font-family: 'X360';
@@ -38,6 +39,7 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header figure{
@@ -370,6 +372,47 @@ header a:link,a:visited{
 
 .tienda a button:hover > span{
     animation: mover-flecha 0.7s ease infinite;
+}
+
+/* ========= FOOTER ========= */
+footer{
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(rgb(37, 37, 37), rgb(34, 34, 34));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+footer .redes{
+    display: flex;
+    gap: 22px;
+}
+
+footer .autor{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .autor .nombre{
+    font-family: 'Poppins';
+    color: rgb(160, 154, 154);
+    font-size: 25px;
+}
+
+footer .autor .nombre h5 span:hover{
+    transform: 0.3s;
+    cursor: pointer;
+    color: rgb(250, 206, 30);
+}
+
+footer .redes a svg:hover, footer .autor .github a svg:hover{
+    transition: 0.3s;
+    stroke: rgb(250, 206, 30);
+    transform: scale(1.2);
 }
 
 @keyframes mover-flecha{
