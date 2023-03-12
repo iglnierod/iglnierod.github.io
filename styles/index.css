@@ -132,14 +132,15 @@ a:link,a:visited{
     margin: 0 70px;
 }
 
-.playstation-text h1{
+.playstation-text a h1{
     color: white;
     font-family: 'Zrnic';
     font-size: 7rem;
     letter-spacing: 0.2rem;
+    border: none;
 }
 
-.playstation-text h1:hover{
+.playstation-text a h1:hover{
     background-image: linear-gradient(to right, #DF0024, #F3C300, #00AC9F, #2E6DB4);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -155,7 +156,7 @@ a:link,a:visited{
     margin: 20px 0;
 }
 
-.playstation-text a{
+.playstation-text a#btn{
     font-weight: 100;
     border: 2px solid white;
     border-radius: 5px;
@@ -167,7 +168,7 @@ a:link,a:visited{
 }
 
 
-.playstation-text a:hover{
+.playstation-text a#btn:hover{
     box-shadow: 0px 0px 42px 2px rgba(0,0,0,0.79);
     background-color: #01328d;
 }
