@@ -1,6 +1,10 @@
 /*ICONS*/
 /*GOOGLE ICONS*/
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+/* FONTS */
+/* GOOGLE FONTS */
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 /*PLAYSTATION*/
 @font-face {
     font-family: 'Zrnic';
@@ -122,6 +126,49 @@ header nav a .underline{
 
 header nav a:hover > .underline{
     background: linear-gradient(to right, #001947, #00266b, #003087, #0040b8, #014fe0);
+}
+
+/* ========= FOOTER ========= */
+footer{
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(rgb(37, 37, 37), rgb(34, 34, 34));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+footer .redes{
+    display: flex;
+    gap: 22px;
+}
+
+footer .autor{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .autor .nombre{
+    font-family: 'Poppins';
+    color: rgb(160, 154, 154);
+    font-size: 25px;
+}
+
+footer .autor .nombre h5 span:hover{
+    transform: 0.3s;
+    cursor: pointer;
+    color: rgb(250, 206, 30);
+}
+
+footer .redes a svg:hover, footer .autor .github a svg:hover{
+    transition: 0.3s;
+    stroke: rgb(250, 206, 30);
+    transform: scale(1.2);
 }
 
 /* ========= MEDIA QUERIES ========= */
