@@ -387,6 +387,21 @@ footer .redes a svg:hover, footer .autor .github a svg:hover{
 }
 
 /* ========= MEDIA QUERIES ========= */
+@media (max-width: 1635px) {
+    .main section.content .historia .comienzos{
+        flex-direction: column;
+        gap: 50px;
+        width: 90%;
+    }
+    .main section.content .historia .comienzos .texto{
+        width: 100%;
+    }
+
+    .main section.content .historia .comienzos .texto h2{
+        text-align: center;
+    }
+}
+
 @media (max-width: 1508px) {
     header nav a{
         width: 200px;    
