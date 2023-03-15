@@ -207,6 +207,7 @@ header nav a:hover > .underline{
 }
 
 /* ========= CONTENIDO ========= */
+/* ========= HISTORIA ========= */
 .main section.content{
     display: flex;
     flex-direction: column;
@@ -247,7 +248,7 @@ header nav a:hover > .underline{
 
 .main section.content .historia .comienzos{
     /* background: linear-gradient(90deg, rgba(0,0,68,1) 0%, rgba(0,0,138,1) 16%, rgba(0,0,179,1) 32%, rgba(4,68,202,1) 59%, rgba(0,151,255,1) 91%, rgba(90,188,255,1) 100%); */
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.7);
     padding: 30px 50px;
     border-radius: 30px;
     display: flex;
@@ -276,6 +277,70 @@ header nav a:hover > .underline{
 .main section.content .historia .comienzos iframe{
     border-radius: 20px;
 }
+
+/* ========= CONSOLAS ========= */
+.main section.content .consolas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main section.content .consolas h2{
+    font-family: 'Roboto';
+    font-size: 60px;
+    margin-top: 25px;
+}
+
+
+.main section.content .consolas .display{
+    display: flex;
+    width: 70%;
+    padding: 40px;
+    gap: 10%;
+    height: fit-content;
+    border-radius: 30px;
+}
+
+.main section.content .consolas .display .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    gap: 50px;
+    height: fit-content;
+}
+
+.main section.content .consolas .display .left .console{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+.main section.content .consolas .display .left .console:hover{
+    transform: scale(0.95);
+}
+
+
+.main section.content .consolas .display .pantalla{
+    width: 80%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.35);
+}
+
+.main section.content .consolas .display .left .console.active{
+    transition: 0.5s ease;
+    background-color: rgb(230, 230, 230);
+}
+
 
 /* ========= FOOTER ========= */
 footer{
