@@ -342,6 +342,12 @@ header nav a:hover > .underline{
     user-select: none;
 }
 
+.main section.content .consolas .display .pantalla.random{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main section.content .consolas .display .left .console.active{
     background: linear-gradient(140deg, #001947, #00266b, #003087, #0040b8, #014fe0);
 }
