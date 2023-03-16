@@ -47,6 +47,7 @@ header{
     max-width: 2560px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header section.left{
