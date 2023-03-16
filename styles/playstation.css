@@ -6,33 +6,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 /*PLAYSTATION*/
 @font-face {
     font-family: 'Zrnic';
     src: url('../font/zrnic_playstation-font.ttf');
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     /* outline: 1px solid red; */
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     max-width: 2560px;
     margin: 0 auto;
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
     text-decoration: none;
     color: currentColor;
 }
 
 /* ========= HEADER ========= */
-header{
+header {
     display: flex;
     padding: 10px 15px;
     flex-direction: row;
@@ -50,7 +52,7 @@ header{
     z-index: 1;
 }
 
-header section.left{
+header section.left {
     display: flex;
     align-items: center;
     min-width: 30%;
@@ -67,41 +69,41 @@ header section.left section.logo {
     justify-content: space-evenly;
 }
 
-header section.left section.logo a#menu{
+header section.left section.logo a#menu {
     display: none;
 }
 
-header section.left section.logo img{
+header section.left section.logo img {
     width: 300px;
 }
 
-header div{
+header div {
     display: flex;
     justify-content: flex-end;
     min-width: 10%;
 }
 
-header section.left section div div.separador{
+header section.left section div div.separador {
     width: 5px;
     height: 60px;
     background: linear-gradient(to bottom, #00205a, #002d81, #003597, #0040b8, #014fe0);
     border-radius: 20px;
 }
 
-header section.left section.logo span{
+header section.left section.logo span {
     padding: 10px;
     font-size: xx-large;
     border-radius: 100px;
 }
 
-header section.left section.logo span:hover{
+header section.left section.logo span:hover {
     color: white;
     background: linear-gradient(to bottom, #001947, #00266b, #003087, #0040b8, #014fe0);
     transition: 0.7s ease;
     border-radius: 100px;
 }
 
-header nav{
+header nav {
     width: fit-content;
     height: 64px;
     display: flex;
@@ -109,33 +111,33 @@ header nav{
     align-items: center;
 }
 
-header nav a{
+header nav a {
     width: 250px;
     text-align: center;
     font-family: 'Zrnic';
     font-size: 1.9em;
 }
 
-header nav a{
+header nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px;
 }
 
-header nav a .underline{
+header nav a .underline {
     height: 5px;
     border-radius: 5px;
     width: 180px;
 }
 
-header nav a:hover > .underline{
+header nav a:hover>.underline {
     background: linear-gradient(to right, #001947, #00266b, #003087, #0040b8, #014fe0);
 }
 
 /* ========= MAIN ========= */
 /* ========= DISPLAY ========= */
-.main section.display{
+.main section.display {
     height: 80lvh;
     width: 100%;
     display: flex;
@@ -149,10 +151,10 @@ header nav a:hover > .underline{
 .main section.display div.image {
     height: 100%;
     background: center/cover no-repeat;
-    box-shadow: -1px -2px 43px -4px rgba(0,0,0,1) inset;
+    box-shadow: -1px -2px 43px -4px rgba(0, 0, 0, 1) inset;
 }
 
-.main section.display div section.info{
+.main section.display div section.info {
     height: 62px;
     color: white;
     background-image: linear-gradient(to bottom, rgba(0, 18, 51, 0.9), rgba(0, 20, 56, 0.6), rgba(0, 28, 80, 0.05));
@@ -164,12 +166,13 @@ header nav a:hover > .underline{
     display: none;
 }
 
-.main section.display div section.info h3{
+.main section.display div section.info h3 {
     font-size: 20px;
     font-weight: 400;
 }
 
-.main section.display div section.info span#year, .main section.display div section.info span#rating{
+.main section.display div section.info span#year,
+.main section.display div section.info span#rating {
     font-size: 15px;
     font-weight: 300;
     color: rgb(216, 216, 216);
@@ -191,12 +194,12 @@ header nav a:hover > .underline{
     background-image: url("../img/playstation-display4.jpg");
 }
 
-.main section.display div.game:hover{
+.main section.display div.game:hover {
     width: 60%;
     transition: 1s ease-in-out;
 }
 
-.main section.display div.game:hover > section.info{
+.main section.display div.game:hover>section.info {
     height: 62px;
     color: white;
     background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.9), rgba(37, 37, 37, 0.6) 40%, rgba(54, 54, 54, 0.1));
@@ -209,34 +212,34 @@ header nav a:hover > .underline{
 
 /* ========= CONTENIDO ========= */
 /* ========= HISTORIA ========= */
-.main section.content{
+.main section.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("../img/playstation-content-pattern_bg.svg");
 }
 
-.main section.content h1{
+.main section.content h1 {
     font-family: 'Roboto';
     text-align: center;
     margin: 15px 0;
     font-size: 65px;
-    text-shadow: -5px 5px 7px rgba(0,0,0,0.28);
+    text-shadow: -5px 5px 7px rgba(0, 0, 0, 0.28);
 }
 
-.main section.content h1 span{
+.main section.content h1 span {
     font-family: 'Zrnic';
     font-size: 70px;
     font-weight: bold;
 }
 
 
-.main section.content .flecha span{
+.main section.content .flecha span {
     font-size: 45px;
     animation: playstation-colors 10s linear infinite;
 }
 
-.main section.content .historia{
+.main section.content .historia {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,55 +250,55 @@ header nav a:hover > .underline{
 }
 
 
-.main section.content .historia .comienzos{
+.main section.content .historia .comienzos {
     /* background: linear-gradient(90deg, rgba(0,0,68,1) 0%, rgba(0,0,138,1) 16%, rgba(0,0,179,1) 32%, rgba(4,68,202,1) 59%, rgba(0,151,255,1) 91%, rgba(90,188,255,1) 100%); */
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 30px 50px;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
     flex-wrap: wrap;
 }
 
-.main section.content .historia .comienzos .texto{
+.main section.content .historia .comienzos .texto {
     width: 45%;
     font-family: 'Roboto';
     text-align: justify;
 }
 
-.main section.content .historia .comienzos .texto h2{
+.main section.content .historia .comienzos .texto h2 {
     font-size: 25px;
 }
 
 
-.main section.content .historia .comienzos .texto p{
+.main section.content .historia .comienzos .texto p {
     font-size: 17px;
     line-height: 24px;
 }
 
-.main section.content .historia .comienzos iframe{
+.main section.content .historia .comienzos iframe {
     border-radius: 20px;
 }
 
 /* ========= CONSOLAS ========= */
-.main section.content .consolas{
+.main section.content .consolas {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main section.content .consolas h2{
+.main section.content .consolas h2 {
     font-family: 'Roboto';
     font-size: 60px;
     margin-top: 25px;
 }
 
 
-.main section.content .consolas .display{
+.main section.content .consolas .display {
     display: flex;
     width: 70%;
     padding: 40px;
@@ -304,7 +307,7 @@ header nav a:hover > .underline{
     border-radius: 30px;
 }
 
-.main section.content .consolas .display .left{
+.main section.content .consolas .display .left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,7 +317,7 @@ header nav a:hover > .underline{
     height: fit-content;
 }
 
-.main section.content .consolas .display .left .console{
+.main section.content .consolas .display .left .console {
     width: 200px;
     height: 200px;
     border-radius: 10px;
@@ -322,42 +325,42 @@ header nav a:hover > .underline{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.35);
     cursor: pointer;
     transition: 0.7s ease;
     user-select: none;
 }
 
-.main section.content .consolas .display .left .console:hover{
+.main section.content .consolas .display .left .console:hover {
     transition: 0.7s ease;
     transform: scale(0.92);
 }
 
 
-.main section.content .consolas .display .pantalla{
+.main section.content .consolas .display .pantalla {
     width: 80%;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.35);
     user-select: none;
 }
 
-.main section.content .consolas .display .pantalla.random{
+.main section.content .consolas .display .pantalla.random {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main section.content .consolas .display .left .console.active{
+.main section.content .consolas .display .left .console.active {
     background: linear-gradient(140deg, #001947, #00266b, #003087, #0040b8, #014fe0);
 }
 
-.main section.content .consolas .display .left .console.active img{
+.main section.content .consolas .display .left .console.active img {
     filter: invert(100%);
 }
 
 
-.main section.content .consolas .display .pantalla .default{
+.main section.content .consolas .display .pantalla .default {
     width: 100%;
     height: 100%;
     display: flex;
@@ -374,7 +377,7 @@ header nav a:hover > .underline{
 
 
 /* ========= FOOTER ========= */
-footer{
+footer {
     width: 100%;
     height: 90px;
     background-image: linear-gradient(rgb(37, 37, 37), rgb(34, 34, 34));
@@ -384,12 +387,12 @@ footer{
     padding: 0 40px;
 }
 
-footer .redes{
+footer .redes {
     display: flex;
     gap: 22px;
 }
 
-footer .autor{
+footer .autor {
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
@@ -397,19 +400,20 @@ footer .autor{
     cursor: pointer;
 }
 
-footer .autor .nombre{
+footer .autor .nombre {
     font-family: 'Poppins';
     color: rgb(160, 154, 154);
     font-size: 25px;
 }
 
-footer .autor .nombre h5 span:hover{
+footer .autor .nombre h5 span:hover {
     transform: 0.3s;
     cursor: pointer;
     color: rgb(250, 206, 30);
 }
 
-footer .redes a svg:hover, footer .autor .github a svg:hover{
+footer .redes a svg:hover,
+footer .autor .github a svg:hover {
     transition: 0.3s;
     stroke: rgb(250, 206, 30);
     transform: scale(1.2);
@@ -417,53 +421,84 @@ footer .redes a svg:hover, footer .autor .github a svg:hover{
 
 /* ========= MEDIA QUERIES ========= */
 @media (max-width: 1635px) {
-    .main section.content .historia .comienzos{
+    .main section.content .historia .comienzos {
         flex-direction: column;
         gap: 50px;
         width: 90%;
     }
-    .main section.content .historia .comienzos .texto{
+
+    .main section.content .historia .comienzos .texto {
         width: 100%;
     }
 
-    .main section.content .historia .comienzos .texto h2{
+    .main section.content .historia .comienzos .texto h2 {
         text-align: center;
     }
-}
 
-@media (max-width: 1508px) {
-    header nav a{
-        width: 200px;    
-    }
-}
-
-@media (max-width: 1326px) {
-    header section.left section.logo img{
-        width: 200px;
-    }
-}
-
-@media (max-width: 1267px){
-    header nav a{
-        width: 170px;    
-    }
-}
-
-@media (max-width: 1111px) {
-    header section.left div, header nav {
-        display: none;
+    .display *{
+        outline: 1px solid blue;
     }
 
-    header section.left{
-        min-width: 100%;
-    }
-
-    header section.left section.logo{
+    .main section.content .consolas .display {
+        outline: 1px solid rebeccapurple;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
         width: 100%;
-        justify-content: space-between;
     }
 
-    header section.left section.logo a#menu{
-        display: inherit;
+    .main section.content .consolas .display .left{
+        flex-direction: row;
+        width: 100%;
     }
-}   
+
+    .main section.content .consolas .display .left .console {
+        width: 200px;
+        height: 200px;
+    }
+
+    .main section.content .consolas .display .pantalla{
+        height: 650px;
+        width: 650px;
+    }
+    
+}
+    @media (max-width: 1508px) {
+        header nav a {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 1326px) {
+        header section.left section.logo img {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 1267px) {
+        header nav a {
+            width: 170px;
+        }
+    }
+
+    @media (max-width: 1111px) {
+
+        header section.left div,
+        header nav {
+            display: none;
+        }
+
+        header section.left {
+            min-width: 100%;
+        }
+
+        header section.left section.logo {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        header section.left section.logo a#menu {
+            display: inherit;
+        }
+    }
