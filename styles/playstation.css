@@ -436,7 +436,6 @@ footer .autor .github a svg:hover {
     }
     
     .main section.content .consolas .display {
-        outline: 1px solid rebeccapurple;
         flex-direction: column;
         justify-content: center;
         align-items: center;
